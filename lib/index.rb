@@ -43,7 +43,9 @@ class RubocopLinterAction
   end
 
   def command
-    Command.new(config).build
+    cmd = Command.new(config).build
+    puts cmd
+    cmd
   end
 
   def report
